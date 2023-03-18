@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C45C0F9E-C924-4AE3-AA74-51C8B2E678C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sells_system</RootNamespace>
+    <AssemblyName>Sells_system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Employee.cs" />
+    <Compile Include="Manufacturer.cs" />
+    <Compile Include="pages\数据表查看\供应商表查看\供应商添加\fac_adds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\供应商表查看\供应商添加\fac_adds.Designer.cs">
+      <DependentUpon>fac_adds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\数据表查看\供应商表查看\供应商修改\fac_changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\供应商表查看\供应商修改\fac_changes.Designer.cs">
+      <DependentUpon>fac_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\数据表查看\员工表查看\添加新员工\employee_adds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\员工表查看\添加新员工\employee_adds.Designer.cs">
+      <DependentUpon>employee_adds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\数据表查看\员工表查看\修改员工信息\employee_changes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\员工表查看\修改员工信息\employee_changes.Designer.cs">
+      <DependentUpon>employee_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\销售统计\月销售统计\sell_month.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\销售统计\月销售统计\sell_month.Designer.cs">
+      <DependentUpon>sell_month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\销售统计\年销售统计\sell_year.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\销售统计\年销售统计\sell_year.Designer.cs">
+      <DependentUpon>sell_year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\销售统计\季度销售统计\sell_quarter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\销售统计\季度销售统计\sell_quarter.Designer.cs">
+      <DependentUpon>sell_quarter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\销售统计\日销售统计\sell_day.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\销售统计\日销售统计\sell_day.Designer.cs">
+      <DependentUpon>sell_day.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\业绩查看\examine_records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\业绩查看\examine_records.Designer.cs">
+      <DependentUpon>examine_records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\进货统计\日进货统计\stock_day.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\进货统计\日进货统计\stock_day.Designer.cs">
+      <DependentUpon>stock_day.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\进货统计\月进货统计\stock_month.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\进货统计\月进货统计\stock_month.Designer.cs">
+      <DependentUpon>stock_month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\进货统计\季度进货统计\stock_quarter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\进货统计\季度进货统计\stock_quarter.Designer.cs">
+      <DependentUpon>stock_quarter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\进货统计\年进货统计\stock_year.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\进货统计\年进货统计\stock_year.Designer.cs">
+      <DependentUpon>stock_year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\数据表查看\员工表查看\主窗口\examine_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\员工表查看\主窗口\examine_employee.Designer.cs">
+      <DependentUpon>examine_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\数据表查看\存货表查看\examine_goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\存货表查看\examine_goods.Designer.cs">
+      <DependentUpon>examine_goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\数据表查看\供应商表查看\主窗口\examine_manufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\供应商表查看\主窗口\examine_manufacturer.Designer.cs">
+      <DependentUpon>examine_manufacturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\数据表查看\退货表查看\examine_retreat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\退货表查看\examine_retreat.Designer.cs">
+      <DependentUpon>examine_retreat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\数据表查看\进货表查看\examine_stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\进货表查看\examine_stock.Designer.cs">
+      <DependentUpon>examine_stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\数据表查看\销售表查看\examine_sell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\数据表查看\销售表查看\examine_sell.Designer.cs">
+      <DependentUpon>examine_sell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\登录系统\修改密码\change_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\登录系统\修改密码\change_password.Designer.cs">
+      <DependentUpon>change_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_helper.cs" />
+    <Compile Include="pages\主窗口\main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\主窗口\main_form.Designer.cs">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\登录系统\添加新用户\registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\登录系统\添加新用户\registration.Designer.cs">
+      <DependentUpon>registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\登录\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\登录\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\交易管理\员工添加\employee_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\交易管理\员工添加\employee_add.Designer.cs">
+      <DependentUpon>employee_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\交易管理\供应商添加\factor_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\交易管理\供应商添加\factor_add.Designer.cs">
+      <DependentUpon>factor_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\交易管理\退货登记\sales_return_records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\交易管理\退货登记\sales_return_records.Designer.cs">
+      <DependentUpon>sales_return_records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\交易管理\销售登记\sells_records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\交易管理\销售登记\sells_records.Designer.cs">
+      <DependentUpon>sells_records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pages\交易管理\进货登记\stocks_records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\交易管理\进货登记\stocks_records.Designer.cs">
+      <DependentUpon>stocks_records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="pages\数据表查看\供应商表查看\供应商添加\fac_adds.resx">
+      <DependentUpon>fac_adds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\数据表查看\供应商表查看\供应商修改\fac_changes.resx">
+      <DependentUpon>fac_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\数据表查看\员工表查看\添加新员工\employee_adds.resx">
+      <DependentUpon>employee_adds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\数据表查看\员工表查看\修改员工信息\employee_changes.resx">
+      <DependentUpon>employee_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\数据表查看\供应商表查看\主窗口\examine_manufacturer.resx">
+      <DependentUpon>examine_manufacturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\数据表查看\员工表查看\主窗口\examine_employee.resx">
+      <DependentUpon>examine_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\数据表查看\存货表查看\examine_goods.resx">
+      <DependentUpon>examine_goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\数据表查看\进货表查看\examine_stock.resx">
+      <DependentUpon>examine_stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\数据表查看\退货表查看\examine_retreat.resx">
+      <DependentUpon>examine_retreat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\数据表查看\销售表查看\examine_sell.resx">
+      <DependentUpon>examine_sell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\销售统计\日销售统计\sell_day.resx">
+      <DependentUpon>sell_day.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\销售统计\月销售统计\sell_month.resx">
+      <DependentUpon>sell_month.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\销售统计\季度销售统计\sell_quarter.resx">
+      <DependentUpon>sell_quarter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\销售统计\年销售统计\sell_year.resx">
+      <DependentUpon>sell_year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\业绩查看\examine_records.resx">
+      <DependentUpon>examine_records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\进货统计\日进货统计\stock_day.resx">
+      <DependentUpon>stock_day.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\进货统计\月进货统计\stock_month.resx">
+      <DependentUpon>stock_month.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\进货统计\季度进货统计\stock_quarter.resx">
+      <DependentUpon>stock_quarter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\进货统计\年进货统计\stock_year.resx">
+      <DependentUpon>stock_year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\登录系统\修改密码\change_password.resx">
+      <DependentUpon>change_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\主窗口\main_form.resx">
+      <DependentUpon>main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\交易管理\员工添加\employee_add.resx">
+      <DependentUpon>employee_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\交易管理\供应商添加\factor_add.resx">
+      <DependentUpon>factor_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\交易管理\退货登记\sales_return_records.resx">
+      <DependentUpon>sales_return_records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\交易管理\销售登记\sells_records.resx">
+      <DependentUpon>sells_records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\交易管理\进货登记\stocks_records.resx">
+      <DependentUpon>stocks_records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="pages\登录系统\添加新用户\registration.resx">
+      <DependentUpon>registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\登录\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

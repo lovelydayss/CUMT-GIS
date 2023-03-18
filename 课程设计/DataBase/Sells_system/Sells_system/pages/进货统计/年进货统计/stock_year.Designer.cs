@@ -1,0 +1,160 @@
+﻿namespace Sells_system.pages
+{
+    partial class stock_year
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(stock_year));
+            this.all_value = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dgv_fac = new System.Windows.Forms.DataGridView();
+            this.dgv_stock = new System.Windows.Forms.DataGridView();
+            this.statistics_year = new System.Windows.Forms.Button();
+            this.text_years = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_fac)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_stock)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // all_value
+            // 
+            this.all_value.Enabled = false;
+            this.all_value.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.all_value.Location = new System.Drawing.Point(611, 365);
+            this.all_value.Name = "all_value";
+            this.all_value.Size = new System.Drawing.Size(128, 27);
+            this.all_value.TabIndex = 41;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(453, 365);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 27);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "进货总金额";
+            // 
+            // dgv_fac
+            // 
+            this.dgv_fac.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_fac.Location = new System.Drawing.Point(38, 289);
+            this.dgv_fac.Name = "dgv_fac";
+            this.dgv_fac.RowHeadersWidth = 51;
+            this.dgv_fac.RowTemplate.Height = 27;
+            this.dgv_fac.Size = new System.Drawing.Size(384, 168);
+            this.dgv_fac.TabIndex = 39;
+            // 
+            // dgv_stock
+            // 
+            this.dgv_stock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_stock.Location = new System.Drawing.Point(38, 92);
+            this.dgv_stock.Name = "dgv_stock";
+            this.dgv_stock.RowHeadersWidth = 51;
+            this.dgv_stock.RowTemplate.Height = 27;
+            this.dgv_stock.Size = new System.Drawing.Size(717, 174);
+            this.dgv_stock.TabIndex = 38;
+            // 
+            // statistics_year
+            // 
+            this.statistics_year.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.statistics_year.Location = new System.Drawing.Point(611, 25);
+            this.statistics_year.Name = "statistics_year";
+            this.statistics_year.Size = new System.Drawing.Size(109, 41);
+            this.statistics_year.TabIndex = 37;
+            this.statistics_year.Text = "查询";
+            this.statistics_year.UseVisualStyleBackColor = true;
+            this.statistics_year.Click += new System.EventHandler(this.Statistics_year_Click);
+            // 
+            // text_years
+            // 
+            this.text_years.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.text_years.Location = new System.Drawing.Point(263, 32);
+            this.text_years.Name = "text_years";
+            this.text_years.Size = new System.Drawing.Size(76, 27);
+            this.text_years.TabIndex = 36;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(345, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 27);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "年";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(105, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 27);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "所需统计年份为";
+            // 
+            // stock_year
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(792, 483);
+            this.Controls.Add(this.all_value);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.dgv_fac);
+            this.Controls.Add(this.dgv_stock);
+            this.Controls.Add(this.statistics_year);
+            this.Controls.Add(this.text_years);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "stock_year";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " 年进货统计";
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_fac)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_stock)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox all_value;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dgv_fac;
+        private System.Windows.Forms.DataGridView dgv_stock;
+        private System.Windows.Forms.Button statistics_year;
+        private System.Windows.Forms.TextBox text_years;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+    }
+}
